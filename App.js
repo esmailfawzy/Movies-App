@@ -16,7 +16,7 @@ const App = () => {
             headerShown: false,
           }}
           initialRouteName="Home">
-          <Stack.Screen name="Home" component={Home} />
+          {/* <Stack.Screen name="Home" component={Home} /> */}
           <Stack.Screen
             name="Detail"
             component={Details}
