@@ -1,5 +1,5 @@
 import React from 'react';
-import {StatusBar} from 'react-native';
+import {StatusBar, View} from 'react-native';
 import {Details, Home} from './src/pages';
 import {COLORS} from './src/assets/Constants';
 import {NavigationContainer} from '@react-navigation/native';
@@ -8,7 +8,7 @@ const Stack = createSharedElementStackNavigator();
 
 const App = () => {
   return (
-    <View>
+    <>
       <StatusBar barStyle={'light-content'} backgroundColor={COLORS.main} />
       <NavigationContainer>
         <Stack.Navigator
@@ -27,7 +27,7 @@ const App = () => {
           />
         </Stack.Navigator>
       </NavigationContainer>
-    </View>
+    </>
   );
 };
 
