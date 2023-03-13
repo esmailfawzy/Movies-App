@@ -8,7 +8,7 @@ const Stack = createSharedElementStackNavigator();
 
 const App = () => {
   return (
-    <>
+    <View>
       <StatusBar barStyle={'light-content'} backgroundColor={COLORS.main} />
       <NavigationContainer>
         <Stack.Navigator
@@ -27,7 +27,7 @@ const App = () => {
           />
         </Stack.Navigator>
       </NavigationContainer>
-    </>
+    </View>
   );
 };
 
